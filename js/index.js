@@ -10,6 +10,7 @@ if (hour < 12) {
   greeting.textContent = 'Good evening!';
 }
 
+// show more button functionality
 const showMoreBtn = document.getElementById('showMoreBtn');
 const moreContent = document.getElementById('moreContent');
 
@@ -22,3 +23,19 @@ showMoreBtn.addEventListener('click', () => {
     showMoreBtn.textContent = 'Show More';
   }
 });
+
+// Back to top button functionality
+const backToTopBtn = document.getElementById("backToTop");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+backToTopBtn.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
