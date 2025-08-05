@@ -21,20 +21,20 @@ header {
 
 nav a {
   color: #f0f0f0;
-  margin: 0 1rem;
+  margin: 0 10px;
   font-weight: bold;
   text-decoration: none;
   background-color: #474b49;
-  padding: 0.2rem 0.3rem;
-  border-radius: 0.5rem;
+  padding: 4px 6px;
+  border-radius: 5px;
 }
 
 nav a:hover {
   color: #ffffff;
   text-decoration: none;
   background-color: #b4b7b6;
-  padding: 0.2rem 0.3rem;
-  border-radius: 0.5rem;
+  padding: 4px 6px;
+  border-radius: 7px;
   transition: all 0.3s ease;
 }
 
@@ -55,7 +55,7 @@ h2, h3 {
 
 header, footer {
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 
 main {
